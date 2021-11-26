@@ -1,49 +1,100 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC>
+<html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.imagendefondo {
-  background-image: url("https://raw.githubusercontent.com/echeyd3/echeyd3.github.io/main/abstract-bg.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.estilodetexto {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-</style>
+    <title>Practicas de html5, CSS integrados</title>
+    <style type="text/css">
+        html, body {
+            margin: 2;
+            padding: 2;
+        }
+        body {
+            color: #292929;
+            font: 90% Roboto, Arial, sans-serif;
+            font-weight: 300;
+        }
+        p {
+            padding: 0 10px;
+            line-height: 1.8;
+        }
+        ul li {
+            padding-right: 10px;
+            line-height: 1.6;
+        }
+        h3 {
+            padding: 5px 20px;
+            margin: 0;
+        }
+        div#header {
+            position: relative;
+            background-image: url("/abstract-bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div#header h1 {
+            height: 80px;
+            line-height: 80px;
+            margin: 0;
+            padding-left: 15px;
+            background: #e0e0e0;
+            color: #292929;
+        }
+        div#header a {
+            position: absolute;
+            right: 0;
+            top: 23px;
+            padding: 10px;
+            color: #006;
+        }
+        div#navigation {
+            background: #7cb71c;
+        }
+        div#navigation li {
+            list-style: none;
+        }
+        div#extra {
+            background: #147FA9;
+        }
+        div#footer {
+            background: #42444e;
+            color: #fff;
+        }
+        div#footer p {
+            padding: 20px 10px;
+        }
+        div#container {
+            width: 700px;
+            margin: 0 auto;
+        }
+        div#navigation {
+            float: left;
+            width: 350px;
+        }
+        div#extra {
+            float: right;
+            width: 350px;
+        }
+        div#footer {
+            clear: both;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<div class="imagendefondo">
-  <div class="estilodetexto">
-    <h1 style="font-size:50px">Proximamente</h1>
-    <h3>en los mejores locales</h3>
-    <button><a href="index.html">No Tocar</a></button>
-  </div>
-</div>
-</body>
-<footer>
-'
-<center>
-  <div id="twitch-embed"></div>
+<div id="container">
+    <div id="header">
+        <button><a href="/"></a>echeyd3.github.io</button>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <h1><strong>1. Contenido Principal</strong></h1>
+            <h2>bla bla blablablabla</h2>
+            <div id="twitch-embed" align=center></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
       var embed = new Twitch.Embed("twitch-embed", {
         width: 600,
-        height: 460,
+        height: 400,
         channel: "xflako0",
         layout: "video",
         autoplay: false,
@@ -54,6 +105,38 @@ body {
         player.play();
       });
     </script>
-  </center>
-</footer>
+    <br></br>
+            <h3>Mas Canales de Contenido</h3>
+        </div>
+    </div>
+    <div id="navigation">
+        <p><strong>Menu de Navegacion</strong></p>
+        <h3>Streams que Recomienda la casa</h3>
+        <ul>
+            <li>este</li>
+            <li>este otro</li>
+            <li>unas risas</li>
+            <li>humor </li>
+        </ul>
+        <h3>Redes</h3>
+        <ul>
+            <li>Que si feisbu</li>
+            <li>Que si tüiter</li>
+            <li>Que si steam</li>
+            <li>Que si de nosedonde</li>
+        </ul>
+    </div>
+    <div id="extra">
+        <p><strong>Extras</strong></p>
+        <h3>¿Aprendes? ¿Te entretiene?</h3>
+        <ul>
+            <li>Apoya a los Canales que te aporten algo positivo</li>
+            <li>Agradecer es gratuito, por ahora... </li>
+            <li>Apoyar desde las redes sociales siempre que sea constructivo</li>
+            <li>El "toxiqueo" sera castigado</li>
+        </ul>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
 </html>
