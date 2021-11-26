@@ -1,83 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-<title>echeyd3.hithub.io</title>
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-{
-  box-sizing: border-box;
-}
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
-  background-color: #333;
-  background-image: url('https://images3.alphacoders.com/110/thumb-1920-1109770.jpg');
-  padding: 30px;
+.imagendefondo {
+  background-image: url("https://image.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.estilodetexto {
   text-align: center;
-  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-}
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 50px;
-  background-image: url('https://images3.alphacoders.com/110/thumb-1920-1109770.jpg');
-}
-nav ul {
-  list-style-type: none;
-  padding: 00;
-}
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-footer {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-  background-image: url('https://images3.alphacoders.com/110/thumb-1920-1109770.jpg');
-  color: white;
-}
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
 }
 </style>
 </head>
 <body>
-<header>
-  <h2>Encabezado</h2>
-</header>
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Quien soy</a></li>
-    </ul>
-  </nav>
-  <article>
-  <h2><center>El Otro encabezado</center></h2>
+<div class="imagendefondo">
+  <div class="estilodetexto">
+    <h1 style="font-size:50px">Proximamente</h1>
+    <h3>en los mejores locales</h3>
+    <button><a href="index.html">No Tocar</a></button>
+  </div>
+  </div>
+  </body>
+<footer>
 <center>
   <div id="twitch-embed"></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
       var embed = new Twitch.Embed("twitch-embed", {
-        width: 800,
-        height: 500,
+        width: 600,
+        height: 400,
         channel: "xflako0",
         layout: "video",
         autoplay: false,
@@ -87,13 +52,7 @@ footer {
         var player = embed.getPlayer();
         player.play();
       });
-    </script>
+  </script>
   </center>
-  <h3><center>Parrafo de texto para cualquier tonteria</center></h3>
-  </article>
-</section>
-<footer>
-  <p>echeyd3.github.io</p>
-</footer>
-</body>
+  </footer>
 </html>
