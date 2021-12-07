@@ -5,8 +5,8 @@
       <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style type="text/css">
         model-viewer {
-            width: 100%;
-            height: 100%;
+            width: 25%;
+            height: 25%;
     }
             html, body {
             margin: 2;
@@ -86,9 +86,6 @@
     </style>
 </head>
 <body>
-<div class='scene'>
-    <model-viewer src="/Camara.glb" alt="El De......" exposure="1" shadow-intensity="10" shadow-softness="1" camera-controls camera-target="-0.7m 2m -20m" min-camera-orbit="-2deg 90deg 25.26m" max-camera-orbit="2deg 94deg auto" min-field-of-view="55deg" max-field-of-view="75deg"></model-viewer>
-  </div>
 <div id="container">
     <div id="header">
         <a href="index.html" target="_blank"><button><h1>echeyd3.github.io</h1></button></a>
@@ -145,6 +142,10 @@
         </ul>
     </div>
     <div id="footer"></div>
+    <model-viewer bounds="tight" src="Camara.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" shadow-intensity="1" auto-rotate min-camera-orbit="-180deg 0deg auto" max-camera-orbit="180deg 180deg auto">
+</model-viewer>
+    
+    
 </div>
 </body>
 </html>
