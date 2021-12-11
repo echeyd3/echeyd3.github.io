@@ -1,34 +1,6 @@
 <!DOCTYPE HTML PUBLIC>
 <html lang="es">
 <head>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript">
-google.load("feeds", "1");
-function initialize() {
-  var feed = new google.feeds.Feed("https://www.hltv.org/rss/news"); //aquí indicas la ruta del RSS
-  feed.setNumEntries(3); //número de entradas a mostrar (por defecto carga 4)
-  feed.load(function(result) {
-	if (!result.error) {
-	  var container = document.getElementById("feed"); //utilizamos el id 'feed' para el contenedor
-	  for (var i = 0; i < result.feed.entries.length; i++) {
-		var entry = result.feed.entries[i];
-		var titulo = document.createElement("h3");
-		var ruta = entry.link;
-		var enlace = document.createElement("a"); //creamos un contenedor de tipo enlace
-		enlace.setAttribute('https://www.hltv.org/rss/news); //en el href volcamos el valor de ruta
-		enlace.setAttribute('target','_blank');
-		enlace.appendChild(document.createTextNode(HLTV Live News)); //introducimos el título como hijo
-		titulo.appendChild(https://www.hltv.org/rss/news); //metemos el enlace en el título
-		container.appendChild(HTV-LN); //metemos el título en el contenedor principal
-		var entradilla = document.createElement("p"); //creamos un contenedor de tipo párrafo
-		entradilla.appendChild(document.createTextNode(entry.contentSnippet)); 
-        container.appendChild(entradilla);
-	  }
-	}
-  });
-}
-google.setOnLoadCallback(initialize);
-</script>
     <title>Practicas de html5, CSS integrados</title>
       <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style type="text/css">
@@ -118,8 +90,6 @@ google.setOnLoadCallback(initialize);
     </style>
 </head>
 <body>
-    <div id="feed">
-	...Feed:
 </div>
 <div id="container">
     <div id="header">
