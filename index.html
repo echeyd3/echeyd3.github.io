@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-    <meta name="description" content="Noticias sobre deportes, deportes electronicos, Streams, Humor, webGL, Noticias, etc...">
-    <meta name="keywords" content="Twitch, Stream, Noticias, Deportes, sport & esports, RSS, webgl, juegos, jugadores, equipos, organizaciones, etc... "/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Noticias sobre deportes, deportes electronicos, Streams, Humor, webGL, Noticias, etc...">
+<meta name="keywords" content="Twitch, Stream, Noticias, Deportes, sport & esports, RSS, webgl, juegos, jugadores, equipos, organizaciones, etc... "/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <meta charset="UTF-8">
 <title>esports, rss, news and gaming series</title>
 <style>
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+	}
+.mySlides {
+  display: none;
+	}
+img {
+width: 100%;
+height: auto;
+	}
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -16,7 +28,7 @@
         background-color: #333;
         color: white;
         text-align: center;
-        padding: 20px 0;
+        padding: 50px 0;
     }
     main {
         padding: 20px;
@@ -25,10 +37,9 @@
         background-color: #333;
         color: white;
         text-align: center;
-        padding: 10px 0;
+        padding: 50px 0;
     }
-</style>
-</head>
+</style></head>
 <header>
     <div id="twitch-embed"></div>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -38,14 +49,34 @@
         height: 600,
         channel: "xflako0"
       });
-    </script>
-</header>
-<body>
-<main>
+    </script></header>
+<body><main>
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div>
 </main>
 <footer>
-</footer>
-</body>
-</html>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="https://ideogram.ai/assets/image/lossless/response/B5AhSYZORNCHpJbytke3fg" alt="Imagen 1">
+  </div>
+  <div class="mySlides">
+    <img src="https://ideogram.ai/assets/image/lossless/response/OpTZTzotRuWcBf3PCTT0uA" alt="Imagen 2">
+  </div>
+  <div class="mySlides">
+    <img src="https://ideogram.ai/assets/image/lossless/response/XmiAqz_jS12EzhkB3ZlxEw" alt="Imagen 3">
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 6000); // Cambiar imagen cada 6 segundos
+}
+</script></footer></body></html>
