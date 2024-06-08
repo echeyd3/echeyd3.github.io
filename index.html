@@ -29,28 +29,23 @@
     }
 </style>
 </head>
-<header>      
-            <div id="twitch-embed" align=center></div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+<header>
+    <div id="twitch-embed"></div>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
-	@@ -107,27 +39,20 @@ <h1>Bienvenidos!</h1>
-        channel: "xflako0",
-        layout: "video",
-        autoplay: false,
-        parent: ["echeyd3.github.com",]
-      });
-      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-        var player = embed.getPlayer();
-        player.play();
+      new Twitch.Embed("twitch-embed", {
+        width: 860,
+        height: 600,
+        channel: "xflako0"
       });
     </script>
-    </header>
+</header>
 <body>
-		<main>
-        <p><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div></p>
-    	</main>
-    <footer>
-    </footer>
+<main>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div>
+</main>
+<footer>
+</footer>
 </body>
 </html>
