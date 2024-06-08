@@ -1,103 +1,35 @@
-<!DOCTYPE HTML PUBLIC>
+<!DOCTYPE html>
 <html lang="es">
- <meta name="description" content="Noticias sobre deportes, deportes electronicos, Streams, Humor, webGL, Noticias, etc...">
+    <meta name="description" content="Noticias sobre deportes, deportes electronicos, Streams, Humor, webGL, Noticias, etc...">
     <meta name="keywords" content="Twitch, Stream, Noticias, Deportes, sport & esports, RSS, webgl, juegos, jugadores, equipos, organizaciones, etc... "/>
- <head>
-    <title>Streams, Noticias, e-sports, Rss...</title>
-          <style type="text/css">
-        model-viewer {
-            width: 85%;
-            height: 55%;
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
+<title>esports, rss, news and gaming series</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
-        html, body {
-            margin: 2;
-            padding: 2;
-        }
-        body {
-            color: #292929;
-            font: 90% Roboto, Arial, sans-serif;
-            font-weight: 300;
-            background-image: url('');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        p {
-            padding: 0 10px;
-            line-height: 1.8;
-        }
-        ul li {
-            padding-right: 10px;
-            line-height: 1.6;
-        }
-        h3 {
-            padding: 5px 20px;
-            margin: 0;
-        }
-        div#header {
-            position: relative;
-            background-image: url("");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        div#header h1 {
-            height: 80px;
-            line-height: 80px;
-            margin: 0;
-            padding-left: 15px;
-            background: #e0e0e0;
-            color: #292929;
-        }
-        div#header a {
-            position: absolute;
-            right: 0;
-            top: 23px;
-            padding: 10px;
-            color: #006;
-        }
-        div#navigation {
-            background: #5F9EA0;
-        }
-        div#navigation li {
-            list-style: none;
-        }
-        div#extra {
-            background: #ffff40;
-        }
-        div#footer p {
-            padding: 20px 10px;
-        }
-        div#container {
-            width: 800px;
-            margin: 0 auto;
-        }
-        div#navigation {
-            float: left;
-            width: 400px;
-        }
-        div#extra {
-            float: right;
-            width: 400px;
-        }
-        div#footer {
-            clear: both;
-            width: 100%;
-            background: #42444e;
-            color: #292929;
-        }
-    </style>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+</style>
 </head>
-<body>
-</div>
-<div id="container">
-    <div id="header">
-        <a href="index.html" target="_blank"><button><h1>echeyd3.github.io</h1></button></a>
-    </div>
-        <div id="wrapper">
-        <div id="content">
-            <h1>Bienvenidos!</h1>
+<header>      
             <div id="twitch-embed" align=center></div>
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
@@ -107,27 +39,20 @@
         channel: "xflako0",
         layout: "video",
         autoplay: false,
-        parent: ["echeyd3.github.com", "legify.es"]
+        parent: ["echeyd3.github.com",]
       });
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
         var player = embed.getPlayer();
         player.play();
       });
     </script>
-    <br></br>
-            <h3>_</h3>
-        </div>
-    </div>
-    <div id="navigation">
-        <p><strong>Noticias</strong></p>
-        <h3>Eurogamer.es<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.eurogamer.es%2F%3Fformat%3Drss&detail=-1&limit=9&showtitle=false&type=js"></script></h3>
-    </div>
-    <div id="extra">
-        <p><strong>News</strong></p>
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-6e2eddad-bdf0-4f9c-aaf3-fa5f3e050460" data-elfsight-app-lazy></div>
-    </div>
-    <div id="body"><center><model-viewer alt="" src="Camara.glb" ar ar-modes="webxr scene-viewer quick-look" seamless-poster shadow-intensity="1" camera-controls></model-viewer></center></div>
-    <div id="footer"><a class="twitter-timeline" href="https://twitter.com/JJMMeneses?ref_src=twsrc%5Etfw">Tweets by JJMMeneses</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    </header>
+<body>
+		<main>
+        <p><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div></p>
+    	</main>
+    <footer>
+    </footer>
 </body>
 </html>
