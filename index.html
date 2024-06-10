@@ -41,7 +41,14 @@ height: auto;
     }
 </style></head>
 <header>
-    <div id="twitch-embed"></div>
+	//encabezado libre
+</header>
+<body><main>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div>
+</main>
+<footer>
+	<div id="twitch-embed"></div>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
@@ -49,34 +56,5 @@ height: auto;
         height: 600,
         channel: "xflako0"
       });
-    </script></header>
-<body><main>
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-9c752949-b17e-41f5-8c7e-bbfab132a16b" data-elfsight-app-lazy></div>
-</main>
-<footer>
-<div class="slideshow-container">
-  <div class="mySlides">
-    <img src="https://ideogram.ai/assets/image/lossless/response/B5AhSYZORNCHpJbytke3fg" alt="Imagen 1">
-  </div>
-  <div class="mySlides">
-    <img src="https://ideogram.ai/assets/image/lossless/response/OpTZTzotRuWcBf3PCTT0uA" alt="Imagen 2">
-  </div>
-  <div class="mySlides">
-    <img src="https://ideogram.ai/assets/image/lossless/response/XmiAqz_jS12EzhkB3ZlxEw" alt="Imagen 3">
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Cambiar imagen cada 4 segundos
-}
-</script></footer></body></html>
+    </script>
+</footer></body></html>
