@@ -1,107 +1,118 @@
 <!DOCTYPE html>
-<html>
-<style>
-<b>
-body {
-    background-size: 3mm 3mm;
-    background-image: linear-gradient(to right, gray 3px, transparent 1px),
-                      linear-gradient(to bottom, gray 3px, transparent 1px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin: 0;
-}
-/* Container estilos */
-.container {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    padding: 20px 40px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    margin: 0 0 25px;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-p {
-    font-family: Arial, sans-serif;
-    color: #666;
-    margin-bottom: 20px;
-}
-</style>
-
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="app.js" defer></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Y.J.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
-<div class="container">
-        <h1>- Cafeteria Y.J. -</h1>
-        </b>
-        <div class="category">
-            <h2>- Bocadillos -</h2>
-            <div class="item">Mixto - 2.20€</div>
-            <div class="item">Serrano - 2.70€</div>
-            <div class="item">Pollo - 2.90€</div>
-            <div class="item">Pollo Especial - 3.30€</div>
-            <div class="item">Lomo - 3.10€</div>
-            <div class="item">Lomo Especial - 3.50€</div>
-            <div class="item">Mechada - 3.10€</div>
-            <div class="item">Mechada Especial - 3.50€</div>
-            <div class="item">Ternera - 3.10€</div>
-            <div class="item">Ternera Especial - 3.50€</div>
-            <div class="item">Vegetal - 2.60€</div>
-            <div class="item">Bacon - 2.60€</div>
-            <div class="item">Tortilla Francesa - 2.50€</div>
-            <div class="item">YJ - 4.60€</div>
-        </div>
-        <div class="category">
-            <h2>- Sandwich -</h2>
-            <div class="item">Mixto - 2.20€</div>
-            <div class="item">Pollo - 2.90€</div>
-            <div class="item">Pollo Especial - 3.30€</div>
-            <div class="item">Lomo - 3.10€</div>
-            <div class="item">Lomo Especial - 3.50€</div>
-            <div class="item">Mechada - 3.10€</div>
-            <div class="item">Mechada Especial - 3.50€</div>
-            <div class="item">Ternera - 3.10€</div>
-            <div class="item">Ternera Especial - 3.50€</div>
-            <div class="item">Vegetal - 2.60€</div>
-            <div class="item">Bacon - 2.60€</div>
-            <div class="item">Tortilla Francesa - 2.50€</div>
-            <div class="item">YJ - 4.60€</div>
-        </div>
-        <div class="category">
-            <h2>- Hamburguesa -</h2>
-            <div class="item">Normal - 3.20€ </div>
-            <div class="item">Especial - 3.70€</div>
-            <div class="item">Roma Roca - 4.90€</div>
-            <div class="item">Y.J - 5.30€</div>
-            <div class="item">Miguelina - 5.60€ </div>
-            </div>
-       <div class="category">
-            <h2>- 1/2 Bocadillo - </h2>
-            <div class="item">Mixto - 2.20€</div>
-            <div class="item">Serrano - 2.70€</div>
-            <div class="item">Pollo - 2.90€</div>
-            <div class="item">Pollo Especial - 3.30€</div>
-            <div class="item">Lomo - 3.10€</div>
-            <div class="item">Lomo Especial - 3.50€</div>
-            <div class="item">Mechada - 3.10€</div>
-            <div class="item">Mechada Especial - 3.50€</div>
-            <div class="item">Vegetal - 2.60€</div>
-            <div class="item">Bacon - 2.60€</div>
-            <div class="item">Tortilla Francesa - 2.50€</div>
-	<div class="category">
-            <h2>- Papas Locas -</h2>
-            <div class="item">Locas - 3.00€</div>
-            <div class="item">Locas Especial - 3.20€</div>
-            <div class="item">Roma Roca - 4.20€</div>
-            <div class="item">Y'J. - 4.40€</div>
-            <div class="item">reventon - 4.80€</div>
-            <div class="item">Miguelina - 5€ </div>
-            <br>
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<center><body>
+    <h1>Cafeteria Y.J.</h1>
+    <section>
+        <h2>Bocadillos</h2>
+        <ul>
+            <li>Mixto - <span class="price">2.20€</span></li>
+            <li>Serrano - <span class="price">2.70€</span></li>
+            <li>Pollo - <span class="price">2.90€</span></li>
+            <li>Pollo Especial - <span class="price">3.30€</span></li>
+            <li>Lomo - <span class="price">3.10€</span></li>
+            <li>Lomo Especial - <span class="price">3.50€</span></li>
+            <li>Mechada - <span class="price">3.10€</span></li>
+            <li>Mechada Especial - <span class="price">3.50€</span></li>
+            <li>Ternera - <span class="price">3.10€</span></li>
+            <li>Ternera Especial - <span class="price">3.50€</span></li>
+            <li>Vegetal - <span class="price">2.60€</span></li>
+            <li>Bacon - <span class="price">2.60€</span></li>
+            <li>Tortilla Francesa - <span class="price">2.50€</span></li>
+            <li>YJ - <span class="price">4.60€</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sandwich</h2>
+        <ul>
+            <li>Mixto - <span class="price">2.20€</span></li>
+            <li>Pollo - <span class="price">2.90€</span></li>
+            <li>Pollo Especial - <span class="price">3.30€</span></li>
+            <li>Lomo - <span class="price">3.10€</span></li>
+            <li>Lomo Especial - <span class="price">3.50€</span></li>
+            <li>Mechada - <span class="price">3.10€</span></li>
+            <li>Mechada Especial - <span class="price">3.50€</span></li>
+            <li>Ternera - <span class="price">3.10€</span></li>
+            <li>Ternera Especial - <span class="price">3.50€</span></li>
+            <li>Vegetal - <span class="price">2.60€</span></li>
+            <li>Bacon - <span class="price">2.60€</span></li>
+            <li>Tortilla Francesa - <span class="price">2.50€</span></li>
+            <li>YJ - <span class="price">4.60€</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Hamburguesa</h2>
+        <ul>
+            <li>Normal - <span class="price">3.20€</span></li>
+            <li>Especial - <span class="price">3.70€</span></li>
+            <li>Roma Roca - <span class="price">4.90€</span></li>
+            <li>Y.J - <span class="price">5.30€</span></li>
+            <li>Miguelina - <span class="price">5.60€</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>1/2 Bocadillo</h2>
+        <ul>
+            <li>Mixto - <span class="price">2.20€</span></li>
+            <li>Serrano - <span class="price">2.70€</span></li>
+            <li>Pollo - <span class="price">2.90€</span></li>
+            <li>Pollo Especial - <span class="price">3.30€</span></li>
+            <li>Lomo - <span class="price">3.10€</span></li>
+            <li>Lomo Especial - <span class="price">3.50€</span></li>
+            <li>Mechada - <span class="price">3.10€</span></li>
+            <li>Mechada Especial - <span class="price">3.50€</span></li>
+            <li>Vegetal - <span class="price">2.60€</span></li>
+            <li>Bacon - <span class="price">2.60€</span></li>
+            <li>Tortilla Francesa - <span class="price">2.50€</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Papas Locas</h2>
+        <ul>
+            <li>Locas - <span class="price">3.00€</span></li>
+            <li>Locas Especial - <span class="price">3.20€</span></li>
+            <li>Roma Roca - <span class="price">4.20€</span></li>
+            <li>Y'J. - <span class="price">4.40€</span></li>
+            <li>Reventon - <span class="price">4.80€</span></li>
+            <li>Miguelina - <span class="price">5€</span></li>
+        </ul>
+    </section>
+</body>
+</center>
 </html>
